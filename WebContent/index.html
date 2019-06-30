@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>o3617_1(json)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+        
+		<link rel="apple-touch-icon" href="./logo_apple.png">
+		<link rel = "shortcut icon" href="./logo.png">
+		
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyC-AmhIy9r8DDmCs6gApucOEHaWOPeyKzE"></script>
+    </head>
+    <body>
+          <div data-role = "header" id = "title">
+            도서관 현황 및 지도 위치
+          </div>
+            <select name="selectBox" id="selectBox" onchange="SelectChange()">
+                <option value="전체">전체</option>
+            </select>
+          <div id="map"></div>
+          <div id="legend"></div>
+          <div id="libraryLocation"></div>
+    </body>
+</html>
